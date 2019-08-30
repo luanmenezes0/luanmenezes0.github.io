@@ -1,0 +1,99 @@
+.products-title{
+    background-color: $background-color;
+    padding: 40px 20px 20px;
+
+    h5 {
+        width: 100%;
+        font-weight: 600; 
+        text-align: center; 
+        color: white;
+        border-bottom: 1px solid grey; 
+        line-height: 0.1em;
+        margin: 10px 0 10px; 
+
+        span { 
+            background: $background-color; 
+            padding:0 40px; 
+       }
+    } 
+}
+
+
+
+.products-tile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $background-color;
+    padding: 0 50px 20px 50px;
+
+    
+}
+
+.card{
+    margin: 5px 10px 10px 10px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-image: linear-gradient(to top, #1cc167 0%, #2ed3a2 100%);
+}
+  
+.card:hover .overlay {
+    opacity: 0.9;
+}
+  
+.hover-icons{
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translate(-10%, -50%);
+    cursor: pointer;
+}
+
+#blog-entry img{
+    object-fit: cover;
+    object-position: 100%;
+}
+
+.overcard {
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+    transition: .5s ease;
+    background-image: linear-gradient(to top, #675b99 0%, #dc5987 100%);
+
+    p{
+        align-self: baseline;
+        
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .products-tile{
+        flex-direction: row;
+        padding: 30px 0 30px 0;
+        width: 100%;
+    }
+   
+    .products-tile .card{
+        width: 20%;
+    }
+
+}

@@ -1,0 +1,58 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+
+.card .btn {
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50px;
+    
+}
+
+.card .btn a :hover{
+    border: solid 2px #e5e5e5;
+}
+
+.first-content-social button{
+    background-color: white;
+    font-weight: 500;
+    border: solid  2px #355b99;
+    a{
+        color: #355b99
+    }
+}
+  
+.first-content-social button:hover {
+    background-color: #355b99;
+    a{
+        color: white;
+    }
+}
+
+ i fa-facebook-f{
+    color: #355b99; 
+    margin-right: 4px;
+}
+
+
+button{
+    align-self: center;
+    height: 40px;
+    width: 150px;
+    border: 2px solid $background-color;
+    border-radius: 50px;
+}
+
+
+.loadbtn{
+    background-color: transparent;
+    border: white solid 2px;
+    margin: 20px 0 10px;
+
+    a{
+        color: white;
+    }
+
+}
